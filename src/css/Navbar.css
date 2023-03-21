@@ -6,14 +6,31 @@ nav{
     align-items: center;
     gap: 10px;
     position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
 }
 
 nav img {
     width: 35px;
 }
 
-nav h2 {
+.logo_text {
+    font-family: 'Pacifico', cursive;
     font-weight: normal;
-    color: white;
     font-size: 20px;
+}
+
+.search_page_active{
+    position: unset;
+}
+
+.search_page_active > .nav_link{
+    color: #696350;
 }
