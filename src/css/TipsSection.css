@@ -1,0 +1,33 @@
+.tips_section{
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: justify;
+}
+
+.text_wrapper p{
+    line-height: 25px;
+}
+
+.text_wrapper h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+.image_wrapper{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.image_wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

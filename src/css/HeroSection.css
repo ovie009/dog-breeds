@@ -1,0 +1,32 @@
+.hero_section{
+    width: 100dvw;
+    height: 100dvh;
+    min-height: 600px;
+    background-image: url(../assets/images/mobile_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.hero_banner{
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero_banner h1{
+    font-weight: 400;
+}
+

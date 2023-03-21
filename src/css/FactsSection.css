@@ -1,0 +1,19 @@
+.facts_section{
+    margin-block: 50px;
+    text-align: center;
+}
+
+.facts_section h2{
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+    gap: 25px;
+}
