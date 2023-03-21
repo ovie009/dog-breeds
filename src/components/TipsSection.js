@@ -2,7 +2,7 @@ import '../css/TipsSection.css';
 
 const TipsSection = ({heading, paragraph, image, imageDescription, normalFlow}) => {
     
-    console.log(normalFlow);
+    // console.log(normalFlow);
 
     return (
         <div className="tips_section">

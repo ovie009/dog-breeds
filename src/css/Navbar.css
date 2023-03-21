@@ -29,6 +29,7 @@ nav img {
 
 .search_page_active{
     position: unset;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .search_page_active > .nav_link{
