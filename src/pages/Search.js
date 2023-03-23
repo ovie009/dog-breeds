@@ -18,7 +18,9 @@ const Search = () => {
     const [data, setData] = useState([]);
     const { search } = useLocation();
     const params = new URLSearchParams(search);
-    const query = params.get('query');
+    const [query, setQuery] = useState(() => {
+        return params.get('query');
+    });
     
     useEffect(() => {
         fetch('https://dogs-by-api-ninjas.p.rapidapi.com/v1/dogs?name='+query, options)
@@ -26,11 +28,23 @@ const Search = () => {
         .then(data => setData(data));
     }, [query]);
 
-    console.log(data);
+    const submitQuery = (query) => {
+
+        // Set the 'query' parameter to 'new value'
+        params.set('query', query);
+
+        // Update the URL with the new query string
+        window.history.replaceState({}, '', `${window.location.pathname}?${params.toString()}`);
+
+        // Update the state with the new query value
+        setQuery(params.get('query'));
+    }
+
+    // console.log(data);
 
     return (
         <div className='search_page'>
-            <SearchForm query={query} />
+            <SearchForm query={query} submitQuery={submitQuery} />
             <div className="search_results_container">
 
                 {

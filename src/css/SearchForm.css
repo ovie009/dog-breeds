@@ -27,3 +27,8 @@
 ::placeholder{
     color: #8B836A;
 }
+
+.empty_fields{
+    /* border: 1px solid tomato !important; */
+    box-shadow: 0 0 10px tomato !important;
+}
