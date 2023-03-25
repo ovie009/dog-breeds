@@ -1,6 +1,8 @@
 .search_page{
     min-height: calc(100dvh - 100px);
     padding-block: 20px;
+    height: fit-content;
+    /* position: relative; */
 }
 
 .search_results_container{
@@ -16,4 +18,29 @@
 .no_results{
     padding-block: 80px;
     color: #696350;
+}
+
+.offset_buttons_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 20px;
+}
+
+.offset_buttons_wrapper button{
+    /* width: 30%; */
+    padding-inline: 10px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #696350;
+    border: 1px solid #696350;
+    transition: 1s;
+}
+
+.show_more:hover{
+    background-color: #696350;
+    color: white;
+    border: none;
 }

@@ -70,7 +70,7 @@ const FactsSection = () => {
             <div className="card_container">
                 {
                     facts.map( fact => (
-                        <Card key={fact.id} cardHeading={fact.cardHeading} cardParagraph={fact.cardParagraph} cardImage={fact.cardImage}/>
+                        <Card key={fact.id} cardHeading={fact.cardHeading} cardParagraph={fact.cardParagraph} cardImage={fact.cardImage} setScrollHeight={0}/>
                     ))
                 }
             </div>

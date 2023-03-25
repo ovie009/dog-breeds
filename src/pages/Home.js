@@ -5,7 +5,7 @@ import vaccination from '../assets/images/dog_vet.png';
 import TipsSection from '../components/TipsSection';
 import FactsSection from '../components/FactsSection';
 
-const Home = () => {
+const Home = ({setDisplayDogInfo}) => {
 
         
     const tips = [
@@ -34,6 +34,9 @@ const Home = () => {
         normalFlow: true
         }
     ];
+
+    // if user navigates to home page, disable dog info panel
+    setDisplayDogInfo(false); 
 
     return (  
         <>

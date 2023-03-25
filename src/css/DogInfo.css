@@ -1,0 +1,87 @@
+.dog_info{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-inline: 20px;
+}
+
+.dog_header{
+    display: flex;
+    gap: 10px;
+    padding-block: 10px;
+}
+
+.back_to_search{
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dog_name{
+    font-size: 20px;
+}
+
+.dog_body{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.dog_image_wrapper{
+    width: 100%;
+    aspect-ratio: 16/9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.dog_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.dog_attributes{
+    display: flex;
+    list-style: none;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.dog_attributes li{
+    display: flex;
+    gap: 5px;
+}
+
+.attribute-value{
+    display: flex;
+    align-items: center;
+}
+
+svg{
+    fill: transparent;
+}
+
+.fill_1 > svg:nth-child(-n+1){
+    fill: #696350;
+}
+
+.fill_2 > svg:nth-child(-n+2){
+    fill: #696350;
+}
+
+.fill_3 > svg:nth-child(-n+3){
+    fill: #696350;
+}
+
+.fill_4 > svg:nth-child(-n+4){
+    fill: #696350;
+}
+
+.fill_5 > svg:nth-child(-n+5){
+    fill: #696350;
+}

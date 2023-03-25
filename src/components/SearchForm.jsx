@@ -20,7 +20,7 @@ const SearchForm = ({query, submitQuery}) => {
         if (location.pathname === '/search') {
             event.preventDefault();
             submitQuery(searchValue);
-            console.log('here');
+            // console.log('here');
         }
         
         if (location.pathname === '/' && searchValue === '') {
