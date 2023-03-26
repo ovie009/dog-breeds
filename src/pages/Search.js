@@ -43,6 +43,10 @@ const Search = ({displayDogInfo, setDisplayDogInfo}) => {
         params.set('query', query);
         // Update the URL with the new query string
         window.history.replaceState({}, '', `${window.location.pathname}?${params.toString()}`);
+       
+        // set offset back to default value
+        setOffset(0);
+       
         // Update the state with the new query value
         setQuery(params.get('query'));
     }

@@ -41,11 +41,13 @@ const Home = ({setDisplayDogInfo}) => {
     return (  
         <>
             <HeroSection />
-            {
-                tips.map(tip => (
-                    <TipsSection key={tip.id} heading={tip.heading} paragraph={tip.paragraph} image={tip.image} imageDescription={tip.imageDescription} normalFlow={tip.normalFlow} />
-                ))
-            }
+            <div className="tip_section_wrapper">
+                {
+                    tips.map(tip => (
+                        <TipsSection key={tip.id} heading={tip.heading} paragraph={tip.paragraph} image={tip.image} imageDescription={tip.imageDescription} normalFlow={tip.normalFlow} />
+                    ))
+                }
+            </div>
             <FactsSection />
         </>
     );
