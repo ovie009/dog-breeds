@@ -106,7 +106,9 @@ const Search = ({displayDogInfo, setDisplayDogInfo}) => {
                         {/* sending the query and sumbitQuery function to the SearchForm component */}
                         {/* the query prop is used to autofill the search input */}
                         {/* the setQuery prop is used to update the query state and query value in the link parameters */}
-                        <SearchForm query={query} submitQuery={submitQuery} />
+                        <div className="search_form_wrapper">
+                            <SearchForm query={query} submitQuery={submitQuery} />
+                        </div>
                         <div className="search_results_container">
                             {/* display a list of all the dogs from the fetch request */}
                             {

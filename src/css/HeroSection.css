@@ -32,3 +32,52 @@
     font-weight: 400;
 }
 
+@media screen and (min-width: 1024px) {
+    .hero_section{
+        background-image: url('../assets/images/golden_retriever_desktop_2.png');
+        justify-content: flex-start;
+        flex-flow: row;
+        /* padding-inline: 5%; */
+    }
+
+    .hero_banner_wrapper{
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        padding-inline: 5%;
+    }
+    
+    .hero_banner{
+        box-shadow: none;
+        background-color: transparent;
+        text-align: left;
+        align-items: flex-start;
+        color: white;
+        width: 400px;
+        padding-inline: 0 40px;
+    }
+    
+    .hero_banner h1{
+        color: white !important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .hero_banner_wrapper{
+        padding-inline: 0;
+    }
+
+    .hero_banner{
+        width: 700px;
+        gap: 40px;
+    }
+
+    .hero_banner h1{
+        font-size: 4em;
+    }
+
+    .hero_banner p{
+        font-size: 30px;
+    }
+}

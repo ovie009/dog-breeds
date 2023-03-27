@@ -42,3 +42,38 @@
     object-fit: cover;
     object-position: center;
 }
+
+@media screen and (min-width: 1024px) {
+    .tips_section{
+        flex-flow: row;
+        max-width: 1440px;
+        align-items: flex-start;
+        text-align: justify;
+    }
+
+    .text_wrapper{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+
+    .image_wrapper{
+        width: 50%;
+    }
+
+    .reversed_tip{
+        flex-flow: row-reverse;
+    }
+
+        
+    .text_wrapper h2{
+        font-size: 2em;
+    }
+
+    .text_wrapper p{
+        line-height: 30px;
+        font-size: 20px;
+    }
+}

@@ -30,6 +30,9 @@ const Card = ({cardHeading, cardParagraph, cardImage, handleDogInfo, setScrollHe
         <div 
             className="card_wrapper"
             onClick={() => selectDog(cardHeading)}
+            style={{
+                cursor: `${cardHeading !== null ? "pointer" : ""}`
+            }}
         >
             <div className="card_image_wrapper">
                 <img src={cardImage} alt="" />

@@ -21,11 +21,13 @@ const Navbar = () => {
 
     return (
         <nav>
-            <Link className='nav_link' to="/">
-                <img src={logo} alt="golden retriever logo" />
-                <span className='logo_text'>Pawsitively Awesome</span>
-            </Link>
-            <Link className='nav_link' to="/search">search</Link> 
+            <div className="navbar_wrapper">
+                <Link className='nav_link' to="/">
+                    <img src={logo} alt="golden retriever logo" />
+                    <span className='logo_text'>Pawsitively Awesome</span>
+                </Link>
+                <Link className='nav_link' to="/search">search</Link> 
+            </div>
         </nav>
     );
 }

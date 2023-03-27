@@ -5,7 +5,7 @@ const TipsSection = ({heading, paragraph, image, imageDescription, normalFlow}) 
     // console.log(normalFlow);
 
     return (
-        <div className="tips_section">
+        <div className={normalFlow ? "tips_section" : "tips_section reversed_tip"}>
             <div className="text_wrapper">
                 <h2>{heading}</h2>
                 <p>{paragraph}</p>

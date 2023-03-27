@@ -5,10 +5,14 @@
     align-items: flex-start;
     justify-content: center;
     padding-inline: 20px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .dog_header{
+    width: 100%;
     display: flex;
+    justify-items: flex-start;
     gap: 10px;
     padding-block: 10px;
 }
@@ -84,4 +88,51 @@ svg{
 
 .fill_5 > svg:nth-child(-n+5){
     fill: #696350;
+}
+
+@media screen and (min-width: 1024px) {
+    .dog_body{
+        flex-flow: row;
+        gap: 40px;
+        padding-inline: 5%;
+    }
+
+    .dog_image_wrapper{
+        width: 60%;
+        /* height: 100%; */
+        /* aspect-ratio: 16/9; */
+    }
+
+    .dog_header{
+        padding-inline: 5%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .dog_body{
+        flex-flow: row;
+        gap: 40px;
+        width: 100%;
+        padding-inline: 0;
+    }
+    
+    .dog_header{
+        padding-inline: 0;
+    }
+
+    .dog_image_wrapper{
+        width: 70%;
+        height: 100%;
+        aspect-ratio: 4/3;
+    }
+
+    .dog_attributes{
+        width: 30%;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .dog_info{
+        align-items: center;
+    }
 }

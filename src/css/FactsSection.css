@@ -1,6 +1,9 @@
 .facts_section{
     margin-block: 50px;
     text-align: center;
+    padding-inline: 20px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .facts_section h2{
@@ -16,4 +19,10 @@
     justify-content: center;
     padding-block: 20px;
     gap: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+    .facts_section h2{
+        font-size: 2em;
+    }
 }

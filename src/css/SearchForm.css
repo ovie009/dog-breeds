@@ -33,3 +33,32 @@
     /* border: 1px solid tomato !important; */
     box-shadow: 0 0 10px tomato !important;
 }
+
+@media screen and (min-width: 1024px) {
+    .search_form{
+        padding-inline: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .search_form{
+        padding-inline: 0;
+    }
+
+    
+    ::placeholder{
+        font-size: 16px;
+    }
+    
+    .search_form input{
+        height: 45px;
+        padding-inline: 20px;
+    }
+    
+    .search_form button{
+        height: 45px;
+        font-size: 18px;
+    }
+
+
+}

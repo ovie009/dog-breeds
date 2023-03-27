@@ -7,10 +7,12 @@ const HeroSection = () => {
 
     return (
         <div className="hero_section">
-            <div className="hero_banner">
-                <h1>Discover the wonderful world of dogs!</h1>
-                <p>Everything you need to know about mans best friend</p>
-                <SearchForm query={query} />
+            <div className="hero_banner_wrapper">
+                <div className="hero_banner">
+                    <h1>Discover the wonderful world of dogs!</h1>
+                    <p>Everything you need to know about mans best friend</p>
+                    <SearchForm query={query} />
+                </div>
             </div>
         </div>
     );
